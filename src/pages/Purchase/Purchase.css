@@ -1,0 +1,259 @@
+
+
+h2{
+    text-align: center;
+}
+.crypto-img{
+    float: right;
+    margin-top: 7rem;
+    
+}
+
+
+.india-box{
+    padding: 40px;
+    margin: 40px;    
+    border: 1px solid white;
+    border-radius: 20px;
+   
+}
+.india-box ul{
+    padding: 20px;
+    
+   
+}
+.india-box p{
+    padding: 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+    
+
+}
+
+.us-box{
+    padding: 40px;
+   margin: 40px;
+    max-width: 100%;
+    
+    border: 1px solid white;
+    border-radius: 20px;
+   
+}
+.us-box ul{
+    padding: 20px;
+}
+.us-box p{
+    padding: 5px;
+    font-size: 18px;
+    display: flex;
+    justify-content: start;
+    margin-left: 20px;
+    
+    
+    
+}
+
+.go-to-button{
+    background-color: rgb(217, 217, 244);
+    padding: 5px;
+   
+    border-radius: 5px;
+    gap: 20px;
+    width: 100px;
+    float: right;
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    
+}
+.go-to-button:hover{
+    background-color: #2c1c52;
+    color: aliceblue;
+}
+#disclaimer{
+   background-color: #2c1c52;
+}
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 23px;
+    }
+    h3{
+        font-size: 17px;
+    }
+    .crypto-img{
+        width: 100%;
+       display: flex;
+       justify-content: center;
+        margin-top: 10px;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+       
+        
+    }
+    .india-box{
+         margin-left: 20px;
+         margin-right: 20px;
+         
+    }
+    .india-box p{
+        
+        font-size: 15px;
+        display: flex;
+        justify-content: start;
+        
+        
+    }
+    .go-to-button{
+        font-size: 10px;
+        width: 50px;
+        float: right;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .us-box{
+        margin-left: 20px;
+        margin-right: 20px;
+   }
+   .us-box p{
+       font-size: 15px;
+       display: flex;
+       justify-content: start;
+   }
+   .go-to-button{
+       font-size: 10px;
+       width: 50px;
+       float: right;
+       margin-right: 10px;
+       display: flex;
+       justify-content: center;
+   }
+
+}
+@media (max-width: 500px){
+    .india-box p{
+        font-size: 12px;
+        display: flex;
+        justify-content: start;
+    }
+    .us-box p{
+        font-size: 12px;
+        display: flex;
+        justify-content: start;
+    }
+    .go-to-button{
+        font-size: 8px;
+        width: 50px;
+        height: 20px;
+        float: right;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+    }
+ 
+}
+@media (max-width: 414px){
+    .india-box p{
+        font-size: 12px;
+        display: flex;
+        justify-content: start;
+    }
+    .us-box p{
+        font-size: 12px;
+        display: flex;
+        justify-content: start;
+    }
+    .go-to-button{
+        font-size: 8px;
+        width: 50px;
+        height: 20px;
+        float: right;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+    }
+ 
+}
+@media (max-width: 1024px) {
+    .crypto-img{
+        width: 100%;
+       display: flex;
+       justify-content: center;
+        margin-top: 10px;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+       
+        
+    }
+}
+@media (max-width: 820px){
+    .india-box{
+        margin-left: 20px;
+        margin-right: 20px;
+        
+   }
+   .us-box{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+}
+@media (max-width: 912px){
+    .india-box{
+        margin-left: 50px;
+        margin-right: 20px;
+        
+   }
+   .us-box{
+    margin-left: 50px;
+    margin-right: 20px;
+    
+}
+}
+@media (max-width: 344px){
+    .crypto-img{
+        padding-right: 250px;
+       
+        width: 100%;
+       display: flex;
+       justify-content: center;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+       
+        
+    }
+    .india-box{
+        margin-left: 5px;
+        margin-right: 5px;
+        
+   }
+   .us-box{
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+    .india-box p{
+        
+        font-size: 10px;
+        display: flex;
+        justify-content: start;
+    }
+    .us-box p{
+        font-size: 10px;
+        display: flex;
+        justify-content: start;
+    }
+    .go-to-button{
+        font-size: 8px;
+        width: 50px;
+        height: 20px;
+        float: right;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
