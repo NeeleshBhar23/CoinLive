@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import logo from "../../../dist/assets/crypto_images-toldrKlx.png";
+import logo from "../../../dist/assets/crypto_images-toldrKlx-toldrKlx-toldrKlx.png";
 
 import { CoinContext } from '../../context/CoinContext';
 import { Link } from "react-router-dom";
