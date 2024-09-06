@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
-import logo from "../../assets/crypto_images.png";
-import sign from "../../assets/yt-ico.png";
+import logo from "../../../dist/assets/crypto_images-toldrKlx.png";
+
 import { CoinContext } from '../../context/CoinContext';
 import { Link } from "react-router-dom";
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import './Purchase.css'
-import image from "../../assets/crypto_images2.png";
+
 
 const Purchase = () => {
   return (
