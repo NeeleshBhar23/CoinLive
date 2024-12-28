@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 import { ghPages } from 'vite-plugin-gh-pages'
 
 export default defineConfig({
-  base: '/CoinLive/',
+  base: '/',
   plugins: [react(), ghPages()],
 })

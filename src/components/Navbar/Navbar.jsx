@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import logo from "../../../dist/assets/crypto_images-toldrKlx-toldrKlx-toldrKlx.png";
+import logo from "../../assets/crypto_images-toldrKlx-toldrKlx-toldrKlx-toldrKlx-toldrKlx.png";
 
 import { CoinContext } from '../../context/CoinContext';
 import { Link } from "react-router-dom";
@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent p-4 outline rounded-md">
+    <nav className="bg-gray-900 p-4 outline rounded-md">
       <div className="container mx-auto flex justify-between items-center">
         <Link to={'/'} className="flex flex-wrap items-center">
           
@@ -38,8 +38,10 @@ const Navbar = () => {
         </Link>
         <div className="hidden md:flex items-center space-x-6">
           <Link to={'/'} className="text-white hover:text-blue-300">Home</Link>
+          <Link to={'/news'} className="text-white hover:text-blue-300">News</Link>
           <Link to={'/features'} className="text-white hover:text-blue-300">Features</Link>
           <Link to={'/purchase'} className="text-white hover:text-blue-300">Purchase</Link>
+
         </div>
         <div className="flex items-center space-x-4">
           <select onChange={currencyHandler} className="bg-transparent text-white p-1 rounded-md outline outline-offset-2 outline-1">
