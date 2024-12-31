@@ -5,7 +5,7 @@ const Purchase = () => {
     <div className="bg-gray-900 text-white min-h-screen p-6">
       {/* Heading */}
       <h1 className="text-4xl font-bold mb-8 text-center">
-        Best Platforms to Purchase and Trade Cryptocurrencies
+        Best Platforms to Purchase and Trade <strong style={{ color: '#5f06ee' }}> Cryptocurrencies</strong> 
       </h1>
 
       {/* India Section */}

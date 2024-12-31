@@ -30,7 +30,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-gray-900 p-4 outline rounded-md">
+    <nav className="bg-gray-900  p-4 outline rounded-md">
       <div className="container mx-auto flex justify-between items-center">
         <Link to={'/'} className="flex flex-wrap items-center">
           
@@ -65,6 +65,8 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="md:hidden flex flex-col items-center space-y-4 mt-4">
           <Link to={'/'} className="text-white">Home</Link>
+          <Link to={'/news'} className="text-white hover:text-blue-300">News</Link>
+
           <Link to={'/features'} className="text-white">Features</Link>
           <Link to={'/purchase'} className="text-white">Purchase</Link>
         </div>

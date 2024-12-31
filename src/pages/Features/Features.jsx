@@ -32,11 +32,11 @@ const features = [
 
 export default function Example() {
   return (
-    <div className=" bg-gray-900 min-h-screen py-24 sm:py-32">
+    <div className=" bg-gray-900 min-h-screen py-24 sm:py-12">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:text-center">
           <p className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-            Amazing Features for Crypto Lovers!
+          Exciting Features for Every <strong style={{color: '#5f06ee',}}> Crypto </strong> Enthusiast!
           </p>
           <p className="mt-6 text-lg leading-8 text-gray-400">
             If you love cryptocurrencies or are intrigued by the crypto market, these features are just for you!

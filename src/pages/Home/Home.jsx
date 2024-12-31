@@ -32,12 +32,12 @@ const Home = () => {
     }, [allCoin])
 
   return (
-    <div className='home bg-gray-900 min-h-screen py-6'>
+    <div className='home bg-gray-900 min-h-screen p-1 sm:py-6'>
      <div className="hero ">
-     <p className=" text-3xl font-bold tracking-tight text-white sm:text-4xl">
-    Welcome <br /> to The Coin Live
+     <p className=" text-3xl font-bold tracking-tight text-white sm:text-5xl">
+    Welcome to <br /> <strong className='px-2' style={{backgroundColor: 'white', color: '#5f06ee', borderRadius: '8px',  }}> The Coin Live! </strong> 
     </p>
-        <p > Biggest platform to Watch and Track Cryto prices </p>
+        <p className='text-ml'> Your Gateway to Real-Time Crypto Insights! </p>
         <form onSubmit={searchHandler}>
         <input className='text-zinc-600' onChange={inputHandler} list='coinlist' value={input} type="text" placeholder='Search here for crypto' required/>
 
@@ -45,7 +45,7 @@ const Home = () => {
              {allCoin.map((item,index) => (<option key={index} value={item.name}/>))}
          </datalist>
 
-        <button type='submit'>Search</button>
+        <button type='submit' >Search</button>
         </form>
      </div>
       <div className="crypto-table bg-zinc-900">
