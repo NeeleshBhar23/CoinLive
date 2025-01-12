@@ -52,9 +52,9 @@ const Home = () => {
         <div className="table-layout " >
           <p>#</p>
           <p>Coins</p>
-          <p>Price</p>
-          <p style={{textAlign:"center"}}>24H change</p>
-          <p className='market-cap'>Market Cap</p>
+          <p className='current-price'  >Price</p>
+          <p className="change"style={{textAlign:"center"}}>24H change</p>
+          <p className='market-cap'>Market cap</p>
         </div>
         {
             displayCoin.slice(0,10).map((item,index)=>(
@@ -64,7 +64,7 @@ const Home = () => {
                  <img src={item.image} alt="" />
                  <p>{item.name + " - " + item.symbol}</p>
                </div>
-               <p>{currency.symbol} {item.currency_price}</p>
+               <p className='current-price' >{currency.symbol} {item.current_price}</p>
                <p className={item.price_change_percentage_24h>0?"green":"red"} >{item.price_change_percentage_24h}</p>
                <p className='market-cap'>{currency.symbol}  {item.market_cap}</p>
              </Link>   

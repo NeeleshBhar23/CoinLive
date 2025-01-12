@@ -63,15 +63,21 @@
 }
 .table-layout{
     display: grid;
-    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    grid-template-columns: 0.5fr 2fr 1.5fr 1fr 1.5fr;
     padding: 15px 20px;
     align-items: center;
     border-bottom: 1px solid #f3efef;
 }
 
-.market-cap{
-    text-align: right;
+.current-price{
+    text-align: left;
+    
 }
+.market-cap{
+    text-align: left;
+    margin-left: 50px;
+}
+
 
 .table-layout:last-child{
     border: none;
@@ -87,7 +93,7 @@
 
 }
 .table-layout .green{
-    color: #00D515;
+    color: #d5a300;
     text-align: center;
 }
 .table-layout .red{
@@ -97,7 +103,7 @@
 
 @media (max-width: 768px){
      .table-layout{
-        grid-template-columns: 0.5fr 3fr  1fr 1fr;
+        grid-template-columns: 0.5fr 3fr  1.5fr 1fr;
      }
      .market-cap{
         display: none;
@@ -129,3 +135,51 @@
          font-size: 30px;        
     }
 }
+
+@media (min-width: 2560px) {
+    .home {
+      padding: 0px 50px; /* Increased padding for larger screens */
+      padding-bottom: 100px;
+    }
+    .hero {
+      max-width: 1000px; /* Wider hero section */
+      margin: 120px auto;
+      gap: 50px; /* More space between elements */
+    }
+    .hero p {
+      font-size: 3rem; /* Larger font for better readability */
+      width: 80%;
+      line-height: 1.5;
+    }
+    .hero input {
+      font-size: 30px; /* Increased input font size */
+      padding: 15px; /* Larger padding for inputs */
+    }
+    .hero button {
+      font-size: 25px; /* Bigger button text */
+      padding: 15px 50px; /* Larger buttons */
+    }
+    .crypto-table {
+      max-width: 1300px; /* Increased table width */
+      height: 1200px;
+      margin: 50px auto; /* More space around the table */
+      border-radius: 20px; /* Slightly rounder edges */
+      font-size: 2rem;
+    }
+    .table-layout {
+      grid-template-columns: 0.5fr 3fr 2fr 1fr 2fr; /* Adjusted column sizes */
+      padding: 20px 40px; /* More padding for rows */
+      font-size: 2rem; /* Larger text */
+    }
+    .table-layout div img {
+      width: 65px; /* Larger images for better visibility */
+    }
+    .current-price, .market-cap, .change {
+      text-align: left;
+      font-size: 2rem; /* Adjust text size */
+    }
+    .table-layout .green, .table-layout .red {
+      font-size: 2rem; /* Adjust percentage text size */
+    }
+  }
+  
