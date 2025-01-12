@@ -1,137 +1,143 @@
-import "./Features.css"
-import { ChartBarIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
-import { ArrowPathIcon, CloudArrowUpIcon, EyeIcon, FingerPrintIcon, GlobeAltIcon, LockClosedIcon } from '@heroicons/react/24/outline'
 
+import "./Features.css"
+import Pic1 from "/src/assets/Pic1.jpg"
+import Pic2 from "/src/assets/Pic2.jpg"
+
+import {
+  EyeIcon,
+  GlobeAltIcon,
+  CurrencyDollarIcon,
+  ChartBarIcon,
+  CloudArrowUpIcon,
+  FingerPrintIcon,
+  LockClosedIcon,
+} from "@heroicons/react/24/outline";
 
 const features = [
   {
-    name: 'Watch Currencies',
+    name: "Watch Currencies",
     description:
-      'Watch and explore all the cryptocurrencies and coins listed in the market.',
+      "Explore and monitor all cryptocurrencies and coins listed in the market, keeping track of their trends.",
     icon: EyeIcon,
   },
   {
-    name: 'Market Cap',
+    name: "Market Cap Analysis",
     description:
-      'Analyze the larger crypto market and the market cap of specific currencies.',
+      "Dive deep into the larger crypto market and analyze the market capitalization of specific currencies.",
     icon: GlobeAltIcon,
   },
   {
-    name: 'Prices',
+    name: "Real-Time Prices",
     description:
-      'Track real-time crypto prices and 24-hour changes in the market.',
+      "Stay updated with real-time prices and monitor 24-hour changes in the crypto market.",
     icon: CurrencyDollarIcon,
   },
   {
-    name: 'Price Graph',
+    name: "Interactive Price Graph",
     description:
-      'Tap on any currency to watch and analyze price fluctuations using charts and details.',
+      "Tap on any currency to view detailed price fluctuations through interactive charts.",
     icon: ChartBarIcon,
   },
-]
+  {
+    name: "Switch Currency",
+    description:
+      "You can switch and see prices in your country's currecny like ₹,€,$ ",
+    icon: CurrencyDollarIcon,
+  },
+  {
+    name: "Real-Time Updates",
+    description:
+      "Get live updates on market trends, price changes, and top cryptocurrencies to watch.",
+    icon: CloudArrowUpIcon,
+  },
+];
 
-export default function Example() {
+export default function About() {
   return (
-    <div className=" bg-gray-900 min-h-screen py-24 sm:py-12">
+    <div className="bg-gray-900 min-h-screen py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:text-center">
-          <p className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
-          Exciting Features for Every <strong style={{color: '#5f06ee',}}> Crypto </strong> Enthusiast!
-          </p>
+        {/* Hero Section */}
+         {/* Introduction Section */}
+         <div className="mx-auto max-w-2xl lg:text-center">
+          <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl">
+            About <strong style={{ color: '#5f06ee' }}> Coin-live </strong>
+          </h1>
           <p className="mt-6 text-lg leading-8 text-gray-400">
-            If you love cryptocurrencies or are intrigued by the crypto market, these features are just for you!
+            Welcome to your go-to platform for cryptocurrency enthusiasts. Whether you're a beginner or a pro, our website is here to empower your crypto journey.
           </p>
         </div>
-        <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-          <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-            {features.map((feature, index) => (
+
+                {/* How It Works Section */}
+       <div className="grid grid-cols-1 md:grid-cols-2 gap-32">
+            <div className="mt-16 max-w-5xl mx-auto lg:mt-20">
+          <h2 className="text-3xl font-bold tracking-tight text-white text-center">
+            What We Offers
+          </h2>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-2 items-center">
+
+          <div className="flex justify-center">
+              <img
+                src={Pic2}
+                alt="Real-time data visualization"
+                className=" w-44 h-48 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+            <div>
+              <p className="text-lg leading-8 text-gray-400">
+                Our platform live data of top cryptocurrency, providing you with real-time market insights. Users can explore detailed graphs, analyze market caps, and stay updated with price trends — all in one place.
+              </p>
+            </div>
+            
+          </div>
+        </div>
+
+        {/* Purpose Section */}
+        <div className="mt-16 max-w-5xl mx-auto lg:mt-20">
+          <h2 className="text-3xl font-bold tracking-tight text-white text-center">
+            What We Aim to Do
+          </h2>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-2  items-center">
+            <div className="flex justify-center">
+              <img
+                src={Pic1}
+                alt="Mission illustration"
+                className=" w-44 h-48 rounded-md hover:scale-105 transition-transform "
+              />
+            </div>
+            <div>
+              <p className="text-lg leading-8 text-gray-400">
+                Our mission is to simplify cryptocurrency tracking and analysis for everyone. We strive to provide reliable, up-to-date information and intuitive tools to make crypto accessible to all and stay updated with it.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+         
+        {/* Features Section */}
+        <section className="mt-20">
+          <h2 className="text-3xl font-semibold text-white text-center">
+            Features You'll Love
+          </h2>
+          <div className="mt-12 grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
+            {features.map((feature) => (
               <div
                 key={feature.name}
-                className={`relative pl-16 group transition-all ease-in-out duration-1000 ${
-                  index % 2 === 0
-                    ? 'animate__animated animate__fadeInLeft' // Slide in from left for even index
-                    : 'animate__animated animate__fadeInRight' // Slide in from right for odd index
-                }`}
+                className="relative flex flex-col items-center bg-gray-800 p-6 rounded-lg hover:bg-gray-600 transition duration-300"
               >
-                <dt className="text-xl font-semibold leading-7 text-gray-300 group-hover:text-white transition duration-300">
-                  <div className="absolute left-0 top-0 flex h-12 w-12 items-center justify-center rounded-lg bg-zinc-900 group-hover:bg-zinc-700 transition duration-300">
-                    <feature.icon
-                      aria-hidden="true"
-                      className="h-6 w-6 text-white group-hover:scale-110 transition duration-300"
-                    />
-                  </div>
-                  {feature.name}
-                </dt>
-                <dd className="mt-2 text-base leading-7 text-gray-400 group-hover:text-gray-200 transition duration-300">
+                <div className="flex items-center justify-center w-16 h-16 rounded-full bg-zinc-900 mb-4">
+                  <feature.icon className="h-8 w-8 text-indigo-500" />
+                </div>
+                <h3 className="text-lg font-bold text-white">{feature.name}</h3>
+                <p className="mt-2 text-sm text-gray-400 text-center">
                   {feature.description}
-                </dd>
+                </p>
               </div>
             ))}
-          </dl>
-        </div>
+          </div>
+        </section>
+
+        
       </div>
     </div>
-  )
+  );
 }
-// import { ChartBarIcon, CurrencyDollarIcon } from '@heroicons/react/24/outline'
-// import { ArrowPathIcon, CloudArrowUpIcon, EyeIcon, FingerPrintIcon, GlobeAltIcon, LockClosedIcon } from '@heroicons/react/24/outline'
-
-// const features = [
-//   {
-//     name: 'Watch Currencies',
-//     description:
-//       'Watch and Explore all the crypto currencies and coin listed in the market .',
-//     icon: EyeIcon, 
-//   },
-//   {
-//     name: 'Market cap',
-//     description:
-//       'Take on the larger crypto market and the perticular currency market cap ',
-//     icon: GlobeAltIcon,
-//   },
-//   {
-//     name: 'Prices',
-//     description:
-//       'Track the crypto prices with real time market data and the 24 hours change in the prices.',
-//     icon: CurrencyDollarIcon,
-//   },
-//   {
-//     name: 'Price Graph',
-//     description:
-//       'On a tap on any currency Watch and analyse their  price up down by the help of charts and their details',
-//     icon: ChartBarIcon,
-//   },
-// ]
-
-// export default function Example() {
-//   return (
-//     <div className="bg-transparent py-24 sm:py-32">
-//       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-//         <div className="mx-auto max-w-2xl lg:text-center">
-         
-//           <p className=" text-3xl font-bold tracking-tight text-white sm:text-4xl">
-//            Here is some amazing features for YOU!
-//           </p>
-//           <p className="mt-6 text-lg leading-8 text-gray-600">
-//            if you are an crypto currency lover or interested about the crypto currency market than Yes! it is for you
-//           </p>
-//         </div>
-//         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
-//           <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-10 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
-//             {features.map((feature) => (
-//               <div key={feature.name} className="relative pl-16">
-//                 <dt className=" text-1xl text-base font-semibold leading-7 text-gray-300">
-//                   <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-zinc-900">
-//                     <feature.icon aria-hidden="true" className="h-6 w-6 text-white" />
-//                   </div>
-//                   {feature.name}
-//                 </dt>
-//                 <dd className="mt-2 text-base leading-7 text-gray-600">{feature.description}</dd>
-//               </div>
-//             ))}
-//           </dl>
-//         </div>
-//       </div>
-//     </div>
-//   )
-// }

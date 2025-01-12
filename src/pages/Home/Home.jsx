@@ -35,9 +35,9 @@ const Home = () => {
     <div className='home bg-gray-900 min-h-screen p-1 sm:py-6'>
      <div className="hero ">
      <p className=" text-3xl font-bold tracking-tight text-white sm:text-5xl">
-    Welcome to <br /> <strong className='px-2' style={{backgroundColor: 'white', color: '#5f06ee', borderRadius: '8px',  }}> The Coin Live! </strong> 
+    Welcome to <br /> <strong className='px-2' style={{ color: '#5f06ee', borderRadius: '8px', }}> The Coin Live! </strong> 
     </p>
-        <p className='text-ml'> Your Gateway to Real-Time Crypto Insights! </p>
+        <p className='text-gray-400 text-ml sm:text-xl '> Your Gateway to Real-Time Crypto Insights! </p>
         <form onSubmit={searchHandler}>
         <input className='text-zinc-600' onChange={inputHandler} list='coinlist' value={input} type="text" placeholder='Search here for crypto' required/>
 
@@ -65,7 +65,7 @@ const Home = () => {
                  <p>{item.name + " - " + item.symbol}</p>
                </div>
                <p className='current-price' >{currency.symbol} {item.current_price}</p>
-               <p className={item.price_change_percentage_24h>0?"green":"red"} >{item.price_change_percentage_24h}</p>
+               <p className={item.price_change_percentage_24h>0?"text-green-600":"text-red-500"} >{item.price_change_percentage_24h}</p>
                <p className='market-cap'>{currency.symbol}  {item.market_cap}</p>
              </Link>   
             ))

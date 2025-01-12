@@ -99,7 +99,7 @@ const Purchase = () => {
       </div>
 
       {/* Disclaimer */}
-      <div className="bg-gray-800 p-6 rounded-lg shadow-md">
+      <div className="bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-600">
         <p>
           <strong>Disclaimer:</strong> Investing in cryptocurrencies, DeFi, and
           ICOs is highly risky and speculative. The markets can be volatile. Consult with a qualified

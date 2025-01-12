@@ -69,7 +69,7 @@ const NewsFeed = () => {
 
   // Fetching the news from Currents API
   const fetchCryptoNews = async () => {
-    const apiKey = 'wPCTTp_EVLmeliwUfEHgMAK1XWjZcQrxX2wOEve5GraZ2Gh3'; // Replace with your Currents API key
+    const apiKey = 'wPCTTp_EVLmeliwUfEHgMAK1XWjZcQrxX2wOEve5GraZ2Gh3'; 
     const url = `https://api.currentsapi.services/v1/search?keywords=cryptocurrency&apiKey=${apiKey}`;
 
     try {
@@ -96,36 +96,39 @@ const NewsFeed = () => {
   }, []);
 
   return (
-    <div className="bg-gray-900 min-h-screen py-10">
-      <div className="container mx-auto px-5">
-        <h1 className="text-4xl font-bold mb-5 text-center text-gray-100">Latest <strong style={{ color: '#5f06ee' }}> Cryptocurrency </strong> News</h1>
-        
-        {loading ? (
-          <p className="text-center text-gray-600">Loading...</p>
-        ) : (
-          <ul className="space-y-5">
-            {news.map((item, index) => (
-              <li key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
-                <div className="flex items-center p-5">
-                  <img
-                    src={item.image ? item.image : 'https://via.placeholder.com/100'}
-                    alt={item.title}
-                    className="w-16 h-16 rounded-md object-cover"
-                  />
-                  <div className="ml-5 flex-1">
-                    <a href={item.url} target="_blank" rel="noopener noreferrer">
-                      <h2 className="text-xl font-semibold text-gray-100">{item.title}</h2>
-                    </a>
-                    <p className="text-sm text-gray-600 mt-2">{item.published}</p>
-                    <p className="text-gray-400 mt-1">{item.description}</p>
-                  </div>
-                </div>
-              </li>
-            ))}
-          </ul>
-        )}
+    <div className="bg-gray-900 min-h-screen py-10 ">
+  <div className="container mx-auto px-5">
+    <h1 className="text-4xl font-bold mb-5 text-center text-gray-100">
+      Latest <strong style={{ color: '#5f06ee' }}> Cryptocurrency </strong> News
+    </h1>
+
+    {loading ? (
+      <p className="text-center text-gray-600">Loading...</p>
+    ) : (
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {news.map((item, index) => (
+          <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden">
+            <div className="flex items-center p-5">
+              <img
+                src={item.image ? item.image : 'https://via.placeholder.com/100'}
+                alt={item.title}
+                className="w-16 h-16 rounded-md object-cover"
+              />
+              <div className="ml-5 flex-1">
+                <a href={item.url} target="_blank" rel="noopener noreferrer">
+                  <h2 className="text-xl font-semibold text-gray-100">{item.title}</h2>
+                </a>
+                <p className="text-sm text-gray-600 mt-2">{item.published}</p>
+                <p className="text-gray-400 mt-1">{item.description}</p>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-    </div>
+    )}
+  </div>
+</div>
+
   );
 };
 
